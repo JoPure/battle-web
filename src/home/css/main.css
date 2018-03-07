@@ -1,0 +1,851 @@
+.wrap {
+    overflow: hidden;
+    width: 100%;
+    min-width: 1024px;
+}
+
+.header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    min-width: 1024px;
+    height: 775px;
+}
+
+.header .flash_box {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+}
+
+.bannerPic {
+    width: 100%;
+    min-width: 1024px;
+    background: url("../img/bannerBg.jpg") no-repeat center;
+    height: 380px;
+}
+
+.downloadBox {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.leftPic {
+    float: left;
+    margin-top: 20px;
+    width: 333px;
+    height: 342px;
+    position: relative;
+    background: url(../img/leftPic.png) no-repeat center;
+}
+
+.download_link_box {
+    float: left;
+    margin-top: 210px;
+}
+
+.download_link_box a {
+    float: left;
+    margin: 0 6px 5px;
+    width: 154px;
+    height: 51px;
+}
+
+.download_link_box a:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+}
+
+.download_link_box .Ipa {
+    background: url(../img/Ipa.png) no-repeat center;
+}
+
+.download_link_box .Apk {
+    background: url(../img/Apk.png) no-repeat center;
+
+}
+
+.download_link_box .iOS {
+    background: url(../img/app.png) no-repeat center;
+}
+
+.download_link_box .Android {
+    background: url(../img/google.png) no-repeat center;
+}
+
+.downloadPic {
+    background: url("../img/download.png") no-repeat center;
+    width: 289px;
+    height: 414px;
+    position: relative;
+    top: -16px;
+    left: 36px;
+    float: left;
+    z-index: 99;
+}
+
+.downloadPic .code_box {
+    position: absolute;
+    width: 213px;
+    height: 213px;
+    left: 50%;
+    margin-left: -106px;
+    top: 90px;
+}
+
+.FB {
+    position: relative;
+    top: 320px;
+    left: 30px;
+}
+
+.qiehuanPic {
+    margin-top: 60px;
+    width: 333px;
+    float: right;
+    height: 300px;
+    position: relative;
+}
+
+.picture {
+    position: absolute;
+    bottom: 10px;
+}
+
+.qiehuanPic ul {
+    position: absolute;
+    top: 20px;
+    left: 8px;
+}
+
+.chooseBtn li {
+    float: left;
+    display: block;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.chooseBtn li.photo1 {
+    background: url("../img/banner1/2.png") no-repeat;
+}
+
+.chooseBtn li.photo1.active {
+    background: url("../img/banner1/3.png") no-repeat;
+}
+
+/*main*/
+
+.main {
+    min-width: 1024px;
+    background: url("../img/main_bg.jpg") no-repeat center;
+    height: 1293px;
+}
+
+.main_contain {
+    padding-top: 45px;
+}
+
+.news {
+    margin: 0 auto;
+    width: 1024px;
+    overflow: hidden;
+}
+
+.video_box {
+    float: left;
+    margin: 0;
+    width: 1024px;
+    height: 800px;
+    /*background: url(../img/video_box.png) no-repeat center;*/
+}
+
+.video_box h2 {
+    position: relative;
+    margin: 20px auto;
+    height: 26px;
+    background: url(../img/video_h.png) no-repeat center;
+}
+
+.video_box h2 a {
+    position: absolute;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/addPic.png) no-repeat center;
+}
+
+.video_btn_box {
+    text-align: center;
+}
+
+.video_box .video_content {
+    margin: 8px auto 0;
+    width: 309px;
+    cursor: pointer;
+    position: relative;
+}
+
+.video_btn {
+    background: url("../img/video_btn.png") no-repeat;
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    top: 28%;
+    left: 45%;
+}
+
+.activity {
+    width: 656px;
+    height: 292px;
+    float: right;
+    background: url("../img/news/news_bg.png") no-repeat;
+}
+
+.activityPic ul li {
+    float: left;
+}
+
+.news_nav {
+    margin: 30px 28px 0px 45px;
+}
+
+.news_nav ul li {
+    float: left;
+    cursor: pointer;
+}
+
+.addBtn {
+    background: url("../img/addPic.png") no-repeat;
+    width: 21px;
+    height: 20px;
+    float: right;
+}
+
+.news_nav .newsMenu li {
+    position: relative;
+    width: 106px;
+    height: 21px;
+}
+
+.newsMenu li.Menu1 {
+    background: url("../img/news/news1.png") no-repeat center top;
+}
+
+.newsMenu li.Menu2 {
+    background: url("../img/news/news2.png") no-repeat center top;
+}
+
+.newsMenu li.Menu3 {
+    background: url("../img/news/news3.png") no-repeat center top;
+}
+
+.newsMenu li.Menu1.active {
+    background: url("../img/news/news1_hover.png") no-repeat center top;
+}
+
+.newsMenu li.Menu2.active {
+    background: url("../img/news/news2_hover.png") no-repeat center top;
+}
+
+.newsMenu li.Menu3.active {
+    background: url("../img/news/news3_hover.png") no-repeat center top;
+}
+
+.news_nav .newsMenu li a {
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 106px;
+    height: 9px;
+    z-index: 3;
+}
+
+.news_nav .newsMenu .active a {
+    background: url(../img/news/active_line.png) no-repeat
+}
+
+.newsBox ul {
+    float: left;
+    height: 225px;
+    overflow: hidden;
+}
+
+.newsBox ul li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.newsBox ul li a,
+.newsBox ul li span {
+    float: left;
+    overflow: hidden;
+}
+
+.navContent_box p a {
+    display: block;
+    font-size: 16px;
+    color: #FF6600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navContent_box p a:hover {
+    color: #B94B01;
+}
+
+.post-name {
+    width: 510px;
+    padding-left: 20px;
+    color: #666;
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-name:hover {
+    color: #999;
+}
+
+.post-name span {
+    font-size: 30px;
+    margin: 0 8px;
+    color: #BFBEBE;
+}
+
+.date {
+    text-align: right;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/*ͼƬ�л�*/
+
+.activities {
+    margin: 45px auto 0;
+    width: 1024px;
+    overflow: hidden;
+}
+
+.activities .qiehuanPic2 {
+    width: 655px;
+    float: left;
+    height: 589px;
+    position: relative;
+    background: url("../img/charac/qiehuanBtn/switchBg.png") no-repeat center;
+}
+
+.chooseMenu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.chooseMenu li {
+    position: relative;
+    float: left;
+    display: block;
+    height: 25px;
+    width: 93px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.chooseMenu li:after {
+    position: absolute;
+    left: 5px;
+    bottom: -3px;
+    content: "";
+    width: 93px;
+    height: 8px;
+    background: #fff;
+}
+
+.chooseMenu li.active:after {
+    background: url(../img/charac/qiehuanBtn/borderLind.png) no-repeat;
+}
+
+.chooseMenu li.intMenu1 {
+    background: url("../img/charac/qiehuanBtn/switch01.png") no-repeat center;
+}
+
+.chooseMenu li.intMenu1.active {
+    background: url("../img/charac/qiehuanBtn/switch01_hover.png") no-repeat center;
+}
+
+.chooseMenu li.intMenu2 {
+    background: url("../img/charac/qiehuanBtn/switch02.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu2.active {
+    background: url("../img/charac/qiehuanBtn/switch02_hover.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu3 {
+    background: url("../img/charac/qiehuanBtn/switch03.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu3.active {
+    background: url("../img/charac/qiehuanBtn/switch03_hover.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu4 {
+    background: url("../img/charac/qiehuanBtn/switch04.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu4.active {
+    background: url("../img/charac/qiehuanBtn/switch04_hover.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu5 {
+    background: url("../img/charac/qiehuanBtn/switch05.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu5.active {
+    background: url("../img/charac/qiehuanBtn/switch05_hover.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu6 {
+    background: url("../img/charac/qiehuanBtn/switch06.png") no-repeat center top;
+}
+
+.chooseMenu li.intMenu6.active {
+    background: url("../img/charac/qiehuanBtn/switch06_hover.png") no-repeat center top;
+}
+
+/*����*/
+
+.qzjMenu,
+.qxMenu,
+.zlMenu,
+.hmMenu,
+.zxMenu,
+.zlxMenu {
+    position: absolute;
+    width: 260px;
+    top: 150px;
+    right: 5px;
+}
+
+.qzjMenu li,
+.qxMenu li,
+.zlMenu li,
+.hmMenu li,
+.zxMenu li,
+.zlxMenu li {
+    cursor: pointer;
+    padding: 3px;
+    float: left;
+}
+
+.qzjMenu li.qzj1 {
+    background: url("../img/charac/qzjMenu/destroyGirl1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj2 {
+    background: url("../img/charac/qzjMenu/destroyGirl2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj3 {
+    background: url("../img/charac/qzjMenu/destroyGirl3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj4 {
+    background: url("../img/charac/qzjMenu/destroyGirl4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj5 {
+    background: url("../img/charac/qzjMenu/destroyGirl5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj1.active {
+    background: url("../img/charac/qzjMenu/destroyGirl1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj2.active {
+    background: url("../img/charac/qzjMenu/destroyGirl2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj3.active {
+    background: url("../img/charac/qzjMenu/destroyGirl3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj4.active {
+    background: url("../img/charac/qzjMenu/destroyGirl4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qzjMenu li.qzj5.active {
+    background: url("../img/charac/qzjMenu/destroyGirl5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+/*��Ѳս��*/
+
+.qxMenu li.qx1 {
+    background: url("../img/charac/qxMenu/light1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx2 {
+    background: url("../img/charac/qxMenu/light2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx3 {
+    background: url("../img/charac/qxMenu/light3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx4 {
+    background: url("../img/charac/qxMenu/light4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx5 {
+    background: url("../img/charac/qxMenu/light5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx1.active {
+    background: url("../img/charac/qxMenu/light1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx2.active {
+    background: url("../img/charac/qxMenu/light2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx3.active {
+    background: url("../img/charac/qxMenu/light3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx4.active {
+    background: url("../img/charac/qxMenu/light4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.qxMenu li.qx5.active {
+    background: url("../img/charac/qxMenu/light5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+/*ս��*/
+
+.zlMenu li.zl1 {
+    background: url("../img/charac/zlMenu/battleGirl1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl2 {
+    background: url("../img/charac/zlMenu/battleGirl2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl3 {
+    background: url("../img/charac/zlMenu/battleGirl3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl4 {
+    background: url("../img/charac/zlMenu/battleGirl4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl5 {
+    background: url("../img/charac/zlMenu/battleGirl5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl1.active {
+    background: url("../img/charac/zlMenu/battleGirl1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl2.active {
+    background: url("../img/charac/zlMenu/battleGirl2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl3.active {
+    background: url("../img/charac/zlMenu/battleGirl3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl4.active {
+    background: url("../img/charac/zlMenu/battleGirl4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlMenu li.zl5.active {
+    background: url("../img/charac/zlMenu/battleGirl5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+/*
+��ĸ
+*/
+
+.hmMenu li.hm1 {
+    background: url("../img/charac/hmMenu/airCraftGirl1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm2 {
+    background: url("../img/charac/hmMenu/airCraftGirl2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm3 {
+    background: url("../img/charac/hmMenu/airCraftGirl3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm4 {
+    background: url("../img/charac/hmMenu/airCraftGirl4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm5 {
+    background: url("../img/charac/hmMenu/airCraftGirl5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm1.active {
+    background: url("../img/charac/hmMenu/airCraftGirl1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm2.active {
+    background: url("../img/charac/hmMenu/airCraftGirl2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm3.active {
+    background: url("../img/charac/hmMenu/airCraftGirl3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm4.active {
+    background: url("../img/charac/hmMenu/airCraftGirl4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.hmMenu li.hm5.active {
+    background: url("../img/charac/hmMenu/airCraftGirl5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+/*սѲ*/
+
+.zxMenu li.zx1 {
+    background: url("../img/charac/zxMenu/heavyGirl1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx2 {
+    background: url("../img/charac/zxMenu/heavy2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx3 {
+    background: url("../img/charac/zxMenu/heavy3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx4 {
+    background: url("../img/charac/zxMenu/heavy4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx5 {
+    background: url("../img/charac/zxMenu/heavy5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx1.active {
+    background: url("../img/charac/zxMenu/heavy1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx2.active {
+    background: url("../img/charac/zxMenu/heavy2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx3.active {
+    background: url("../img/charac/zxMenu/heavy3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx4.active {
+    background: url("../img/charac/zxMenu/heavy4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zxMenu li.zx5.active {
+    background: url("../img/charac/zxMenu/heavy5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+/*ս��Ѳ��*/
+
+.zlxMenu li.zlx1 {
+    background: url("../img/charac/zdMenu/zhandao1.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx2 {
+    background: url("../img/charac/zdMenu/zhandao2.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx3 {
+    background: url("../img/charac/zdMenu/zhandao3.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx4 {
+    background: url("../img/charac/zdMenu/zhandao4.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx5 {
+    background: url("../img/charac/zdMenu/zhandao5.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx1.active {
+    background: url("../img/charac/zdMenu/zhandao1_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx2.active {
+    background: url("../img/charac/zdMenu/zhandao2_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx3.active {
+    background: url("../img/charac/zdMenu/zhandao3_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx4.active {
+    background: url("../img/charac/zdMenu/zhandao4_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.zlxMenu li.zlx5.active {
+    background: url("../img/charac/zdMenu/zhandao5_hover.png") no-repeat;
+    width: 68px;
+    height: 62px;
+}
+
+.addPic {
+    float: right;
+    width: 332px;
+    height: 390px;
+}
+
+.addPic .addBtn2 {
+    width: 22px;
+    height: 22px;
+    background: url("../img/addPic.png") no-repeat;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.photoDiv {
+    width: 332px;
+    height: 589px;
+    position: relative;
+    background: url("../img/photo_bg.png") no-repeat center;
+}
+
+.pic {
+    padding-top: 65px;
+    margin-left: 12px;
+}
+
+.photoDiv ul{
+   margin-top: 5px;
+}
+
+.photoDiv ul li {
+    float: left;
+    padding: 3px;
+}

@@ -1,0 +1,577 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-family: "Tahoma", "Microsoft YaHei", "Helvetica Neue", Arial, HelveticaNeue, Helvetica-Neue, Helvetica, "BBAlpha Sans", sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+    background: #eaf6ff;
+}
+
+ul, li, div, p, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.wrap {
+    margin: 0 auto;
+}
+
+.top_nav {
+    position: relative;
+    height: 11rem;
+    background: url(../img/top_bg.png) no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.top_nav .logo_icon {
+    position: absolute;
+    top: 2.5rem;
+    left: 3.125rem;
+    width: 14.5rem;
+    height: 14.5rem;
+    background: url(../img/logo_icon.png) no-repeat;
+    background-size: cover;
+}
+
+.top_nav .logo_small {
+    position: absolute;
+    left: 20.625rem;
+    bottom: 2.5rem;
+    width: 21.1875rem;
+    height: 4.1875rem;
+    background: url(../img/logo_small.png) no-repeat;
+    background-size: cover;
+}
+
+.top_nav .facebook {
+    position: absolute;
+    right: 5rem;
+    top: 2.5rem;
+    width: 18.75rem;
+    height: 6.375rem;
+    background: url(../img/facebook.png) no-repeat;
+    background-size: cover;
+}
+
+.ibox_01 {
+    position: relative;
+    width: 100%;
+    height: 1520px;
+    background: url(../img/bg_01.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.ibox_01 .video_btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 311px;
+    height: 169px;
+    background: url(../img/video.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_01 .video_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.ibox_01 .video_box {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.ibox_01 .video_box video {
+    width: 100%;
+}
+
+.ibox_01 .download {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 41.5625rem;
+    height: 11.375rem;
+    background: url(../img/download.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_02 {
+    position: relative;
+    padding-top: 6.25rem;
+    width: 100%;
+    height: 52.6875rem;
+    background: #2ea3dc;
+}
+
+.ibox_02 .title_02 {
+    margin: 0 auto;
+    width: 100%;
+    height: 3.125rem;
+    background: url(../img/title_02.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.ibox_02 .swiper-container {
+    width: 90%;
+    height: 90%;
+}
+
+.ibox_02 .swiper-container .swiper-slide {
+    width: 100% !important;
+}
+
+.ibox_02 .swiper-container .swiper-slide img {
+    width: 100%;
+}
+
+.ibox_02 .swiper-pagination span {
+    width: 1.875rem;
+    height: 1.875rem;
+    background: #fff;
+    opacity: 1;
+}
+
+.ibox_02 .swiper-pagination .swiper-pagination-bullet-active {
+    width: 3.75rem;
+    border-radius: 15px;
+    background: #ffe743;
+}
+
+.ibox_03 {
+    position: relative;
+    padding-top: 100px;
+    height: 1485px;
+    background: url(../img/bg_03.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_03 .title_03 {
+    margin: 0 auto;
+    width: 100%;
+    height: 3.75rem;
+    background: url(../img/title_03.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.ibox_03 .swiper-container {
+    height: 90%;
+}
+
+.ibox_03 .swiper-slide img {
+    width: 650px;
+    height: 1145px;
+}
+
+.ibox_03 .swiper-pagination span {
+    width: 1.875rem;
+    height: 1.875rem;
+    background: #38a7dd;
+    opacity: 1;
+}
+
+.ibox_03 .swiper-pagination .swiper-pagination-bullet-active {
+    background: #ffe743;
+}
+
+.ibox_03 .swiper-button-prev,
+.ibox_03 .swiper-button-next {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+.ibox_03 .swiper-button-prev {
+    background: #6abce4 url(../img/left_sj.png) no-repeat center;
+}
+
+.ibox_03 .swiper-button-next {
+    background: #6abce4 url(../img/right_sj.png) no-repeat center;
+}
+
+.ibox_04 {
+    position: relative;
+    padding-top: 100px;
+    height: 1410px;
+    background: #2ea3dc;
+}
+
+.ibox_04 .title_04 {
+    margin: 0 auto;
+    width: 100%;
+    height: 3.75rem;
+    background: url(../img/title_04.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.ibox_04 .swiper-container {
+    top: 3%;
+    height: 90%;
+}
+
+.ibox_04 .img_box_bg {
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    height: 750px;
+    background: url(../img/bg_04.png) no-repeat center;
+    background-size: 100%;
+}
+
+.ibox_04 .swiper-slide {
+    position: relative;
+    top: 64px;
+}
+
+.ibox_04 .swiper-slide img {
+    width: 100%;
+}
+
+.ibox_04 .img_box {
+    height: 82.5%;
+}
+
+.ibox_04 .intr_text {
+    position: absolute;
+    top: 62.5%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.ibox_04 .intr_text h3 {
+    margin: 20px auto;
+    font-size: 5rem;
+}
+
+.ibox_04 .intr_text h4 {
+    font-size: 3.75rem;
+}
+
+.ibox_04 .intr_text p {
+    font-size: 3.125rem;
+}
+
+.ibox_04 .mark_icon {
+    position: absolute;
+    top: 62.5%;
+    left: 10%;
+    width: 149px;
+    height: 191px;
+    color: #fff;
+    background: url(../img/mark_icon.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_04 .mark_icon p {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+.ibox_04 .mark_icon h4 {
+    margin: 0 auto;
+    font-size: 3.75rem;
+}
+
+.ibox_04 .swiper-pagination {
+    top: 15px;
+    bottom: auto;
+}
+
+.ibox_04 .swiper-pagination span {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    opacity: 1;
+    margin: 0 20px !important;
+    background-color: #fff;
+    background-size: cover;
+}
+
+.ibox_04 .swiper-pagination span:nth-child(1) {
+    background-image: url(../img/nav_01_gray.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(2) {
+    background-image: url(../img/nav_02_gray.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(3) {
+    background-image: url(../img/nav_03_gray.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(4) {
+    background-image: url(../img/nav_04_gray.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(5) {
+    background-image: url(../img/nav_05_gray.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(6) {
+    background-image: url(../img/nav_06_gray.png);
+}
+
+.ibox_04 .swiper-pagination .swiper-pagination-bullet-active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+}
+
+.ibox_04 .swiper-pagination span:nth-child(1).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_01.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(2).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_02.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(3).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_03.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(4).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_04.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(5).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_05.png);
+}
+
+.ibox_04 .swiper-pagination span:nth-child(6).swiper-pagination-bullet-active {
+    background-image: url(../img/nav_06.png);
+}
+
+.ibox_04 .swiper-pagination span:after {
+    position: absolute;
+    left: 50%;
+    top: 77%;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 30px;
+    border-color: transparent transparent #f1f1f1 transparent;
+    border-style: solid;
+    opacity: 0;
+}
+
+.ibox_04 .swiper-pagination .swiper-pagination-bullet-active:after {
+    -webkit-animation: ani_opacity .5s linear .5s both;
+    animation: ani_opacity .5s linear .5s both;
+}
+
+.ibox_04 .swiper-button-prev,
+.ibox_04 .swiper-button-next {
+    top: 40%;
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+.ibox_04 .swiper-button-prev {
+    background: #6abce4 url(../img/left_sj.png) no-repeat center;
+}
+
+.ibox_04 .swiper-button-next {
+    background: #6abce4 url(../img/right_sj.png) no-repeat center;
+}
+
+@-webkit-keyframes ani_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ani_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ibox_05 {
+    position: relative;
+    padding-top: 100px;
+    height: 708px;
+    background: url(../img/bg_05.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_05 .title_05 {
+    margin: 0 auto;
+    width: 100%;
+    height: 3.75rem;
+    background: url(../img/title_05.png) no-repeat center;
+    background-size: auto 100%;
+}
+
+.ibox_05 .swiper-container {
+    height: 90%;
+}
+
+.ibox_05 .swiper-slide img {
+    width: 690px;
+    height: 420px;
+}
+
+.ibox_05 .swiper-pagination span {
+    width: 1.875rem;
+    height: 1.875rem;
+    background: #38a7dd;
+    opacity: 1;
+}
+
+.ibox_05 .swiper-pagination .swiper-pagination-bullet-active {
+    background: #ffe743;
+}
+
+.ibox_05 .swiper-button-prev,
+.ibox_05 .swiper-button-next {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+}
+
+.ibox_05 .swiper-button-prev {
+    background: #6abce4 url(../img/left_sj.png) no-repeat center;
+}
+
+.ibox_05 .swiper-button-next {
+    background: #6abce4 url(../img/right_sj.png) no-repeat center;
+}
+
+.ibox_06 {
+    position: relative;
+    height: 41.875rem;
+    background: #38a7dd;
+}
+
+.ibox_06 .email,
+.ibox_06 .facebook_social {
+    position: absolute;
+    top: 10%;
+    width: 16.5625rem;
+    height: 19.75rem;
+}
+
+.ibox_06 .facebook_social {
+    left: 22%;
+    background: url(../img/facebook_social.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_06 .email {
+    right: 22%;
+    background: url(../img/email.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_06 .social_01 {
+    position: absolute;
+    left: 8%;
+    bottom: 0;
+    width: 16.1875rem;
+    height: 19.625rem;
+    background: url(../img/social_01.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_06 .social_02 {
+    position: absolute;
+    right: 8%;
+    bottom: 0;
+    width: 13.375rem;
+    height: 18.1875rem;
+    background: url(../img/social_02.png) no-repeat center;
+    background-size: cover;
+}
+
+.ibox_06 .social_03 {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 248px;
+    height: 72px;
+    background: url(../img/social_03.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer {
+    height: 24.0625rem;
+}
+
+.footer .back_top {
+    display: block;
+    margin: 3.75rem auto;
+    width: 37.5625rem;
+    height: 7.125rem;
+    background: url(../img/back_top.png) no-repeat center;
+    background-size: cover;
+}
+
+.footer .icopy b {
+    font-size: 2.8125rem;
+}
+
+.footer .icopy p {
+    margin-top: 1.25rem;
+    font-size: 1.875rem;
+}
+
+/*# sourceMappingURL=main.css.map */

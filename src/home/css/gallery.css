@@ -1,0 +1,113 @@
+/*画廊与新闻内页的样式*/
+.wrap, .container {
+    overflow: hidden;
+    width: 100%;
+    min-width: 1024px;
+    z-index: 1;
+}
+
+.header {
+	position: relative;
+    width: 100%;
+    min-width: 1024px;
+    background: url("../img/galleryImg/header_bg.jpg") no-repeat center;
+    height: 827px;
+}
+
+.main_content {
+    width: 100%;
+    min-width: 1024px;
+    background: url("../img/galleryImg/main_bg.jpg") no-repeat center;
+    height: 775px;
+}
+
+.main {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chooseMenu {
+    width: 1024px;
+}
+
+.menu {
+    position: absolute;
+	left: 50%;	
+    top: 606px;
+	width: 725px;
+	margin-left: -370px;
+}
+
+.galleryMenu li {
+    float: left;
+    padding: 10px;
+}
+
+.galleryMenu li.galleryMenu1 {
+    width: 221px;
+    height: 67px;
+    background: url("../img/galleryImg/menu2.png") no-repeat;
+}
+
+.galleryMenu li.galleryMenu1.active {
+    background: url("../img/galleryImg/menu2_hover.png") no-repeat;
+}
+
+.galleryMenu li.galleryMenu2 {
+    width: 221px;
+    height: 67px;
+    background: url("../img/galleryImg/menu1.png") no-repeat;
+}
+
+.galleryMenu li.galleryMenu2.active {
+    background: url("../img/galleryImg/menu1_hover.png") no-repeat;
+}
+
+.galleryMenu li.galleryMenu3 {
+    width: 221px;
+    height: 67px;
+    background: url("../img/galleryImg/menu3.png") no-repeat;
+}
+
+.galleryMenu li.galleryMenu3.active {
+    background: url("../img/galleryImg/menu3_hover.png") no-repeat;
+}
+
+.galleryActivity {
+    width: 1024px;
+    margin: 0 auto;
+    position: absolute;
+    top: -120px;
+    left: 0px;
+}
+
+.galleryActivity li {
+    float: left;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.video-box {
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.video_btn {
+    background: url("../img/galleryImg/playbtn.png") no-repeat center;
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.video_btn:hover {
+    background: url("../img/galleryImg/playbtn_hover.png") no-repeat center;
+    width: 142px;
+    height: 142px;
+}
+
+

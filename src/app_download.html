@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<script type="text/javascript" src="home/js/uaredirect.js"></script>
+		<script>
+			uaredirect('http://tamquoc.pocketgamesol.com/m.html');
+		</script>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				color: #000;
+				margin: 0;
+				padding: 1em;
+			}
+			
+			img {
+				max-width: 70%;
+			}
+			
+			.tip-words {}
+			
+			.swiper-container {
+				max-width: 100%;
+				height: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				border: 2px skyblue dotted;
+			}
+			
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.button {
+				color: #666;
+				background-color: #EEE;
+				border-color: #EEE;
+				font-weight: 300;
+				font-size: 16px;
+				font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				text-decoration: none;
+				text-align: center;
+				line-height: 40px;
+				height: 40px;
+				padding: 0 40px;
+				margin: 0;
+				display: inline-block;
+				appearance: none;
+				cursor: pointer;
+				border: none;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				-webkit-transition-property: all;
+				transition-property: all;
+				-webkit-transition-duration: .3s;
+				transition-duration: .3s;
+			}
+			
+			.button-primary,
+			.button-primary-flat {
+				background-color: #1B9AF7;
+				border-color: #1B9AF7;
+				color: #FFF;
+			}
+			
+			.button-rounded {
+				border-radius: 4px;
+			}
+		</style>
+		<script>
+			var iosDownloadPath = "itms-services://?action=download-manifest&amp;url=https://od.lk/d/NDNfMTI5ODk5Xw/warship_girls_th.plist";
+			var androidDownloadPath = "http://res-pkg-cdn.pocketgamesol.com/WSGTH/WSGTH.apk";
+
+			function isWeiXin() {
+				var ua = window.navigator.userAgent.toLowerCase();
+				if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+			if (isWeiXin()) {
+				//				alert('you use the wechat')
+			}
+			var dynamicLoading = {
+				css: function(path) {
+					if (!path || path.length === 0) {
+						throw new Error('argument "path" is required !');
+					}
+					var head = document.getElementsByTagName('head')[0];
+					var link = document.createElement('link');
+					link.href = path;
+					link.rel = 'stylesheet';
+					link.type = 'text/css';
+					head.appendChild(link);
+				},
+				js: function(path) {
+					if (!path || path.length === 0) {
+						throw new Error('argument "path" is required !');
+					}
+					var head = document.getElementsByTagName('head')[0];
+					var script = document.createElement('script');
+					script.src = path;
+					script.type = 'text/javascript';
+					head.appendChild(script);
+				}
+			};
+			var addSwiperElement = function() {
+				document.getElementById('tips').innerHTML = '<div class="swiper-container">' +
+					'<div class="swiper-wrapper">' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_1_2ccd5f7.png" class="swiper-lazy"/></div>' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_2_f7acb86.png" class="swiper-lazy"/></div>' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_3_f495fa8.png" class="swiper-lazy"/></div>' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_4_52b0e4c.png" class="swiper-lazy"/></div>' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_5_6b0bed2.png" class="swiper-lazy"/></div>' +
+					'<div class="swiper-slide"><img data-src="http://images-sg-cdn.pocketgamesol.com/wsgth/home/img/install_tips_6_416fc59.png" class="swiper-lazy"/></div>' +
+					'</div>' +
+					'<div class="swiper-pagination"></div>' +
+					'<div class="swiper-button-next"></div>' +
+					'<div class="swiper-button-prev"></div>' +
+					'</div>';
+			};
+			var browser = {
+				versions: function() {
+					var u = navigator.userAgent,
+						app = navigator.appVersion;
+					return {
+						presto: u.indexOf('Presto') > -1,
+						webKit: u.indexOf('AppleWebKit') > -1,
+						gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+						ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+						iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+						iPad: u.indexOf('iPad') > -1,
+						webApp: u.indexOf('Safari') == -1
+					};
+				}(),
+			};
+			var agent = navigator.userAgent.toLowerCase();
+			var isIos9 = false;
+			if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+				var version;
+				if (agent.indexOf("like mac os x") > 0) {
+					var regStr_saf = /os [\d._]*/gi;
+					var verinfo = agent.match(regStr_saf);
+					version = (verinfo + "").replace(/[^0-9|_.]/ig, "").replace(/_/ig, ".");
+				}
+				var version_str = version + "";
+				if (version_str != "undefined" && version_str.length > 0) {
+					var mainVersion = version_str.split('.')[0];
+					if (mainVersion >= 9) {
+						isIos9 = true;
+						dynamicLoading.js('http://images-sg-cdn.pocketgamesol.com/wsgth/home/js/swiper.min_6f29690.js');
+						dynamicLoading.css('http://images-sg-cdn.pocketgamesol.com/wsgth/home/css/swiper.min_53eac07.css');
+					} else {
+						window.location = iosDownloadPath;
+					}
+				}
+			} else {
+				window.location = androidDownloadPath;
+			};
+		</script>
+	</head>
+
+	<body id="content">
+		<div class="tip-words" id="tip-words" style="display: none;">
+			<h2>สำหรับผู้การที่ใช้ระบบiOS9 ขึ้นไป เปิดเกมส์ไม่ได้ต้องแก้ยังไง</h2>
+			<p>1.ถ้าเปิดเกมส์Warship Girls-THไม่ได้ เกิดว่า”ยังไม่ได้เชื่อถือiPhone Distribution :Pocket Games PTE.LTD.” </p>
+			<p>2.เปิด【การตั้งค่า】->【ทั่วไป】->【การจัดการอุปกรณ์】</p>
+			<p>3.กด【Pocket Games PTE.LTD.】</p>
+			<p>4.เชื่อถือ【Pocket Games PTE.LTD.】</p>
+			<p>5.เลือกกด【เชื่อถือ】</p>
+			<p>6.เข้าเกมส์</p>
+			<p><a id="download" href="javascript:void(0)" class="button button-primary button-rounded button-small">DOWNLOAD</a></p>
+		</div>
+		<div class="tips" id="tips"></div>
+		<script>
+			if (isIos9) {
+				document.getElementById('tip-words').style.display = 'block';
+				addSwiperElement();
+			}
+			document.getElementById('download').addEventListener('click', function() {
+				window.location = iosDownloadPath;
+			})
+			window.onload = function() {
+				if (typeof Swiper == 'function') {
+					var swiper = new Swiper('.swiper-container', {
+						lazyLoading: true,
+						autoplay: 1000,
+						pagination: '.swiper-pagination',
+						nextButton: '.swiper-button-next',
+						prevButton: '.swiper-button-prev',
+						watchSlidesProgress: true,
+						slidesPerView: 1,
+						paginationClickable: true,
+						spaceBetween: 30,
+						loop: true
+					});
+					setTimeout(function() {
+						window.location = iosDownloadPath;
+					}, 3000);
+				}
+			}
+		</script>
+	</body>
+
+</html>
